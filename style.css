@@ -29,12 +29,19 @@ header {
     align-items: center;
 
     padding: 12px;
-    
+
     background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(20px);
+
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+
     border-radius: 50px;
 
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    z-index: 9999;  
 }
 
 .logo {
@@ -84,18 +91,22 @@ nav a:hover {
     font-size: 64px;
     font-weight: 600;
     line-height: 1.1;
+    color: rgb(255, 255, 255);
 }
 
 .hero h2 {
     margin-top: 20px;
     font-weight: 400;
     opacity: 0.8;
+    color: rgb(255, 255, 255);
 }
 
 .hero p {
-    margin-top: 15px;
+    margin-top: 20px;
+    font-weight: 300;
     opacity: 0.7;
-    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
 }
 
 /* BOTÕES GLASS */
@@ -107,27 +118,28 @@ nav a:hover {
 
 .btn-primary,
 .btn-secondary {
-    padding: 14px 30px;
+    padding: 20px 40px;
     border-radius: 50px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
 
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255,255,255,0.2);
+    color: rgb(255, 255, 255);
 
-    transition: 0.3s ease;
+    border: 1px solid rgb(255, 255, 255);
+
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover,
 .btn-secondary:hover {
-    background: rgba(255,255,255,0.2);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
 /* SOBRE GLASS CARD */
 .sobre {
-    margin: 120px auto;
+    margin: 5px auto;
     width: 80%;
     padding: 60px;
 
